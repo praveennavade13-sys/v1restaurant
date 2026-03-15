@@ -162,3 +162,115 @@
   background: hsl(var(--gold));
   color: hsl(var(--obsidian));
 }
+
+/* Botpress Webchat Styling */
+.bpw-floating-button,
+[class*="bpw-widget"] button[class*="launcher"] {
+  background: linear-gradient(135deg, hsl(40 32% 40%), hsl(40 38% 55%), hsl(40 45% 70%)) !important;
+  box-shadow: 0 8px 32px hsl(0 0% 0% / 0.4) !important;
+  border: 1px solid hsl(40 38% 55% / 0.3) !important;
+}
+
+.bpw-floating-button:hover,
+[class*="bpw-widget"] button[class*="launcher"]:hover {
+  box-shadow: 0 12px 40px hsl(40 38% 55% / 0.3) !important;
+  transform: scale(1.05) !important;
+}
+
+/* Webchat header */
+.bpw-header-container,
+[class*="bpw-header"] {
+  background: hsl(0 0% 4%) !important;
+  border-bottom: 1px solid hsl(40 38% 55% / 0.2) !important;
+  color: hsl(36 33% 94%) !important;
+}
+
+.bpw-header-title,
+.bpw-header-subtitle {
+  color: hsl(36 33% 94%) !important;
+}
+
+/* Webchat body */
+.bpw-chat-container,
+[class*="bpw-layout"] {
+  background: hsl(0 0% 6%) !important;
+}
+
+/* Bot messages */
+.bpw-from-bot .bpw-chat-bubble,
+[class*="bpw-from-bot"] [class*="bubble"] {
+  background: hsl(0 0% 12%) !important;
+  color: hsl(36 33% 94%) !important;
+  border: 1px solid hsl(0 0% 100% / 0.06) !important;
+  border-radius: 0.25rem !important;
+}
+
+/* User messages */
+.bpw-from-user .bpw-chat-bubble,
+[class*="bpw-from-user"] [class*="bubble"] {
+  background: linear-gradient(135deg, hsl(40 32% 40%), hsl(40 38% 55%)) !important;
+  color: hsl(0 0% 4%) !important;
+  border-radius: 0.25rem !important;
+}
+
+/* Composer / input area */
+.bpw-composer,
+[class*="bpw-composer"] {
+  background: hsl(0 0% 8.6%) !important;
+  border-top: 1px solid hsl(40 38% 55% / 0.15) !important;
+}
+
+.bpw-composer textarea,
+.bpw-composer input,
+[class*="bpw-composer"] textarea,
+[class*="bpw-composer"] input {
+  background: hsl(0 0% 12%) !important;
+  color: hsl(36 33% 94%) !important;
+  border: 1px solid hsl(0 0% 100% / 0.08) !important;
+  border-radius: 0.25rem !important;
+  font-family: 'Montserrat', sans-serif !important;
+}
+
+.bpw-send-button,
+[class*="bpw-send"] {
+  background: hsl(40 38% 55%) !important;
+  color: hsl(0 0% 4%) !important;
+}
+
+/* Quick replies / buttons */
+.bpw-keyboard-quick_reply-btn,
+[class*="quick-reply"],
+[class*="bpw-button"] {
+  background: transparent !important;
+  border: 1px solid hsl(40 38% 55% / 0.5) !important;
+  color: hsl(40 38% 55%) !important;
+  border-radius: 0.25rem !important;
+  font-family: 'Montserrat', sans-serif !important;
+}
+
+.bpw-keyboard-quick_reply-btn:hover,
+[class*="quick-reply"]:hover,
+[class*="bpw-button"]:hover {
+  background: hsl(40 38% 55% / 0.1) !important;
+  border-color: hsl(40 38% 55%) !important;
+}
+
+/* Scrollbar inside webchat */
+.bpw-chat-container::-webkit-scrollbar {
+  width: 4px;
+}
+
+.bpw-chat-container::-webkit-scrollbar-track {
+  background: hsl(0 0% 6%);
+}
+
+.bpw-chat-container::-webkit-scrollbar-thumb {
+  background: hsl(40 38% 55% / 0.3);
+  border-radius: 2px;
+}
+
+/* Webchat widget frame */
+[class*="bpw-widget"],
+.bpw-widget-web {
+  font-family: 'Montserrat', sans-serif !important;
+}
