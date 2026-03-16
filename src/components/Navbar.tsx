@@ -27,7 +27,6 @@ const Navbar = () => {
           <a href="/" className="flex items-center">
             <img src={vLogo} alt="V One Hotel Logo" className="h-12 md:h-14 w-auto object-contain" />
           </a>
-          </div>
 
           <div className="hidden lg:flex gap-10 text-[11px] uppercase tracking-wide-luxury text-foreground/80 font-sans">
             {navItems.map((item) => (
