@@ -1,6 +1,8 @@
 import { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
+import vLogo from '@/assets/v-logo.png';
+import { motion, AnimatePresence } from 'framer-motion';
 
 const navItems = ['Suites', 'Dining', 'Experience', 'Gallery', 'Booking', 'Contact'];
 
