@@ -29,5 +29,52 @@
     <script type="module" src="/src/main.tsx"></script>
     <script src="https://cdn.botpress.cloud/webchat/v3.6/inject.js"></script>
     <script src="https://files.bpcontent.cloud/2026/03/14/10/20260314103120-T2K4KN24.js" defer></script>
+    <script>
+      var vapiInstance = null;
+      const assistant = "32da73c6-4846-4228-9cea-4005b7243de8";
+      const apiKey = "7bacf10e-a0f5-4063-bf30-eb1d615e8d51";
+      const buttonConfig = {
+        position: "bottom-left",
+        offset: "40px",
+        width: "50px",
+        height: "50px",
+        idle: {
+          color: `rgb(180, 155, 80)`,
+          type: "pill",
+          title: "Talk to Ananya",
+          subtitle: "AI Voice Receptionist",
+          icon: "https://unpkg.com/lucide-static@0.321.0/icons/phone.svg",
+        },
+        loading: {
+          color: `rgb(180, 155, 80)`,
+          type: "pill",
+          title: "Connecting...",
+          subtitle: "Please wait",
+          icon: "https://unpkg.com/lucide-static@0.321.0/icons/loader-2.svg",
+        },
+        active: {
+          color: `rgb(200, 60, 60)`,
+          type: "pill",
+          title: "Call in progress",
+          subtitle: "Click to end",
+          icon: "https://unpkg.com/lucide-static@0.321.0/icons/phone-off.svg",
+        },
+      };
+
+      (function (d, t) {
+        var g = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+        g.src = "https://cdn.jsdelivr.net/gh/VapiAI/html-script-tag@latest/dist/assets/index.js";
+        g.defer = true;
+        g.onload = function () {
+          vapiInstance = window.vapiSDK.run({
+            apiKey: apiKey,
+            assistant: assistant,
+            config: buttonConfig,
+          });
+        };
+        s.parentNode.insertBefore(g, s);
+      })(document, "script");
+    </script>
   </body>
 </html>
