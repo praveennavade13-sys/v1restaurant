@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
+import vLogo from '@/assets/v-logo.png';
 
 const navItems = ['Suites', 'Dining', 'Experience', 'Gallery', 'Booking', 'Contact'];
 
@@ -23,10 +24,9 @@ const Navbar = () => {
     <>
       <nav className={`fixed w-full z-50 transition-luxury ${isScrolled ? 'bg-background/90 backdrop-blur-md py-4' : 'bg-transparent py-6 md:py-8'}`}>
         <div className="max-w-7xl mx-auto px-6 flex justify-between items-center">
-          <div className="flex flex-col">
-            <span className="text-2xl md:text-3xl font-serif font-light tracking-luxury text-primary uppercase">V One</span>
-            <span className="text-[9px] md:text-[10px] tracking-luxury text-foreground/60 uppercase -mt-1 font-sans">Raichur</span>
-          </div>
+          <a href="/" className="flex items-center">
+            <img src={vLogo} alt="V One Hotel Logo" className="h-12 md:h-14 w-auto object-contain" />
+          </a>
 
           <div className="hidden lg:flex gap-10 text-[11px] uppercase tracking-wide-luxury text-foreground/80 font-sans">
             {navItems.map((item) => (
