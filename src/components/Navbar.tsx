@@ -25,7 +25,7 @@ const Navbar = () => {
       <nav className={`fixed w-full z-50 transition-luxury ${isScrolled ? 'bg-background/90 backdrop-blur-md py-4' : 'bg-transparent py-6 md:py-8'}`}>
         <div className="max-w-7xl mx-auto px-6 flex justify-between items-center">
           <a href="/" className="flex items-center">
-            <img src={vLogo} alt="V One Hotel Logo" className="h-12 md:h-14 w-auto object-contain" />
+            <img src={vLogo} alt="V One Hotel Logo" className="h-16 md:h-20 w-auto object-contain" style={{ imageRendering: 'auto' }} />
           </a>
 
           <div className="hidden lg:flex gap-10 text-[11px] uppercase tracking-wide-luxury text-foreground/80 font-sans">
