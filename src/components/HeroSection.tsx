@@ -75,7 +75,7 @@ const HeroSection = () => {
         initial={{ opacity: 0, y: 40 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.7, duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
-        className="absolute bottom-8 md:bottom-12 left-1/2 -translate-x-1/2 w-full max-w-5xl px-4 md:px-6 hidden md:block"
+        className="absolute bottom-4 md:bottom-6 left-1/2 -translate-x-1/2 w-full max-w-5xl px-4 md:px-6 hidden md:block"
       >
         <div className="bg-background/60 backdrop-blur-xl border border-foreground/10 p-2 flex flex-col md:flex-row items-stretch gap-2">
           <div className="flex-1 grid grid-cols-4 gap-2">
